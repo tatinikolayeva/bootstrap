@@ -1,0 +1,34 @@
+
+
+@media screen and (min-width: 1024px){
+	.carousel-item {
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.carousel-item {
+		height: 100%;
+	}
+}
+
+@media (min-width: 576px){
+	.container, .container-md, .container-sm {
+    	max-width: 100%;
+	}
+}
+
+.social-icons {
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url("img/arrow-down.svg") no-repeat !important;
+}
+
+.accordion-button::after {
+	background: url("img/arrow-down.svg") no-repeat !important;
+}
+

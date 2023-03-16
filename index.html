@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<div class="container">
+			<a href="" class="navbar-brand">WebDewBlog</a>
+			<button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a href="" class="nav-link">Home</a>
+					</li>
+		
+					<li class="nav-item">
+						<a href="" class="nav-link">About Us</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="" class="nav-link">Delivery</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="" class="nav-link">Blog</a>
+					</li>
+				</ul>
+
+				<div class="d-flex">
+						<button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+						<button class="btn btn-light ms-3">Sign out</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Form</h5>
+				<button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="row mb-3">
+						<label for="inputEmail" class="col-sm-2 col-form-lable">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" name="email" id="inputEmail">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="inputPass" class="col-sm-2 col-form-lable">Password</label>
+						<div class="col-sm-10">
+							<input type="Password" class="form-control" id="inputPass">
+						</div>
+					</div>
+					<fieldset>
+						<div class="row mb-3">
+							<legend class="col-form-label col-sm-2">Radio</legend>
+								<div class="col-sm-10 col-form-label">
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radios" value="option1" id="radios1" checked>
+										<label for="radios1" class="form-check-label">Radio 1</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radios" value="option2" id="radios2">
+										<label for="radios2" class="form-check-label">Radio 2</label>
+									</div>
+									<div class="form-check disabled">
+										<input type="radio" class="form-check-input" name="radios" value="option3" id="radios3" disabled>
+										<label for="radios3" class="form-check-label">Radio 3</label>
+									</div>
+								</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-form-label col-sm-2">Checkbox</div>
+								<div class="col-sm-10">
+									<div class="form-check col-form-label">
+										<input type="Checkbox" id="gridcheck" class="form-check-input">
+										<label for="gridcheck" class="form-check-label">Save password</label>
+									</div>
+								</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button class="btn btn-secondary save_changes"  >Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Modal-->
+
+<main>
+	<div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="img/1.png" alt="">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/2.png" alt="">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/3.png" alt="">
+			</div>
+		</div>
+			<a class="carousel-control-prev" role="button" href="#carouselControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" role="button" href="#carouselControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+	</div>
+
+<div class="container my-5">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<img class="w-100" src="https://pibig.info/uploads/posts/2022-02/1645933154_24-pibig-info-p-buketi-tsvetov-krasivie-originalnie-tsveti-25.jpg" alt="">
+		</div>
+			<div class="col-md-8 col-sm-12 text-center">
+				<h2 class="my-3">About US</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		<h2 class="text-center my-4">Lorem Ipsum is simply</h2>
+		<div class="row gy-3">
+			<div class="col-md-4 col-sm-6 text-center">
+				<h4>Lorem ipsum</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+				</svg>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 text-center">
+				<h4>Lorem ipsum</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+				</svg>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 text-center">
+				<h4>Lorem ipsum</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+				</svg>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 text-center">
+				<h4>Lorem ipsum</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+				</svg>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 text-center">
+				<h4>Lorem ipsum</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+				</svg>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 text-center">
+				<h4>Lorem ipsum</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+				</svg>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container accordion"  id="accordionPanelsStayOpenExample">
+	<div class="accordion-item">
+	    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+	      <button class="accordion-button bg-secondary bg-gradient text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+	        Аккордеонный элемент #1
+	      </button>
+	    </h2>
+	    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+	      <div class="accordion-body">
+	        <strong>Всегда открыт.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	      </div>
+	    </div>
+	</div>
+	<div class="accordion-item">
+	    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+	      <button class="accordion-button collapsed bg-secondary bg-gradient text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+	        Аккордеонный элемент #2
+	      </button>
+	    </h2>
+	    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+	      <div class="accordion-body">
+	        <strong>What is Lorem Ipsum?.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	      </div>
+	    </div>
+	</div>
+ 	<div class="accordion-item">
+	    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+	      <button class="accordion-button collapsed bg-secondary bg-gradient text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+	        Аккордеонный элемент #3
+	      </button>
+	    </h2>
+	    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+	      <div class="accordion-body">
+	        <strong>What is Lorem Ipsum?.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	      </div>
+	    </div>
+	</div>
+</div>
+
+<div class="mt-5">
+  <footer class="text-center text-white" style="background-color: #332D2D;">
+    <div class="container p-4 pb-3">
+      <section class="container social-icons">
+		<a class="m-2 " href=""><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i></a>
+		<a class="m-2 " href=""><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
+		<a class="m-2 " href=""><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>
+		<a class="m-2 " href=""><i class="fab fa-youtube fa-2x" style="color: #ed302f;"></i></a>
+		<a class="m-2 " href=""><i class="fab fa-vk fa-2x" style="color: #4c75a3;"></i></a>
+      </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+</div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
